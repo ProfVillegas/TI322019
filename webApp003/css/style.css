@@ -66,6 +66,12 @@ body {
     font-size: 1.25em;
 }
 
+#main .input-form input[type="color"] {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
 .clear {
     clear: both;
 }
