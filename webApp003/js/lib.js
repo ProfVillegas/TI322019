@@ -1,7 +1,5 @@
 function main() {
-    var nombre = "Nombre alumno";
-    alert("Hola " + nombre);
-    console.log("Hola " + nombre);
-    nombre = 1;
-    alert(++nombre);
+    var nombre = document.getElementById("name").value;
+    var color = document.getElementById("background").value;
+
 }
