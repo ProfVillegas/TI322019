@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    border-bottom: 1px solid #1bb9d4;
+}
+
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.main {
+    width: 870px;
+    margin: 0 auto;
+}
+
+#mainmenu {
+    width: 20%;
+    float: left;
+}
+
+#mainmenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#mainmenu ul li {
+    display: block;
+}
+
+#mainmenu ul li a {
+    background-color: #1bb9d4;
+    color: #FFF;
+    display: block;
+    padding: 10px 20px;
+    transition: background 1s;
+    text-decoration: none;
+}
+
+#mainmenu ul li a:hover {
+    color: #1bb9d4;
+    background-color: #FFF;
+}
+
+#main {
+    width: 79%;
+    float: right;
+}
+
+#main .input-form {
+    padding: 5px 20px;
+}
+
+#main .input-form button {
+    padding: 5px 20px;
+    vertical-align: middle;
+}
+
+#main .input-form button i {
+    vertical-align: top;
+    font-size: 1.25em;
+}
+
+.clear {
+    clear: both;
+}
