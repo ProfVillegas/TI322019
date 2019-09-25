@@ -109,3 +109,23 @@ body {
 .show-clue:hover {
     opacity: 1;
 }
+
+table {
+    font-size: 10px;
+}
+
+table th {
+    text-align: left;
+}
+
+table td {
+    text-align: center;
+}
+
+table tr:hover {
+    background-color: #FFF;
+}
+
+table td:hover {
+    background-color: #c0cec0;
+}
