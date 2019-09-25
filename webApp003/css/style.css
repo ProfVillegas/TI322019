@@ -75,3 +75,11 @@ body {
 .clear {
     clear: both;
 }
+
+.disable {
+    display: none;
+}
+
+.enable {
+    display: block;
+}

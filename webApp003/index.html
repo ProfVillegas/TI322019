@@ -19,20 +19,20 @@
         <nav id="mainmenu">
             <ul>
                 <li>
-                    <a href="#"><i class="material-icons">account_box</i> Option 1</a>
+                    <a href="#e1" onclick="menu(0)"><i class="material-icons">account_box</i> Exercise 1</a>
                 </li>
                 <li>
-                    <a href="#"><i class="material-icons">account_box</i> Option 2</a>
+                    <a href="#e2" onclick="menu(1)"><i class="material-icons">account_box</i> Exercise 2</a>
                 </li>
                 <li>
-                    <a href="#"><i class="material-icons">account_box</i> Option 3</a>
+                    <a href="#e3" onclick="menu(2)"><i class="material-icons">account_box</i> Exercise 3</a>
                 </li>
                 <li>
-                    <a href="#"><i class="material-icons">account_box</i> Option 4</a>
+                    <a href="#e4" onclick="menu(3)"><i class="material-icons">account_box</i> Exercise 4</a>
                 </li>
             </ul>
         </nav>
-        <section id="main">
+        <section id="main e1" class="disable">
             <div class="input-form">
                 <label for="name">First Name:</label>
                 <input type="text" id="name" name="name" placeholder="your first name">
@@ -47,6 +47,41 @@
             <div class="input-form">
                 <div class="result"></div>
             </div>
+        </section>
+        <section id="main e2" class="disable">
+            <div class="input-form">
+                <label for="num1">Número 1</label>
+                <input type="number" name="num1" id="num1" value="0">
+            </div>
+            <div class="input-form">
+                <label for="num2">Número 2</label>
+                <input type="number" name="num2" id="num2" value="0">
+            </div>
+            <div class="input-form">
+                <button onclick="calculate()">Calculate</button>
+            </div>
+            <div class="result2"></div>
+        </section>
+        <section id="main e3" class="enable">
+            <div class="input-form">
+                <label for="number1">Number 1</label>
+                <input type="number" name="number1" id="number1" value="0">
+            </div>
+            <div class="input-form">
+                <label for="number2">Number 2</label>
+                <input type="number" name="number2" id="number2" value="0">
+            </div>
+            <div class="input-form">
+                <label for="number3">Number 3</label>
+                <input type="number" name="number3" id="number3" value="0">
+            </div>
+            <div class="input-form">
+                <button onclick="greatest()">Greatest number</button>
+            </div>
+            <div class="result3"></div>
+        </section>
+        <section id="main e4" class="disable">
+            Exercise 4
         </section>
         <div class="clear"></div>
     </div>
