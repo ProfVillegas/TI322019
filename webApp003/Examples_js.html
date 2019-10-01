@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Examples Code</title>
     <link rel="stylesheet" type="text/css" href="css/examples.css">
-    <script src="js/examples.js">
+    <script src="js/examples_solution.js">
     </script>
 </head>
 
@@ -27,20 +27,134 @@
                 <a href="#" onclick="magic_color(this)"></a>
             </li>
         </ul>
-        <div class="result"></div>
+        <div class="result">
+            <ul class="boxes">
+                <li>
+                    <a href="#" onclick="magic_color(this)"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="magic_color(this)"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="magic_color(this)"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="magic_color(this)"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="magic_color(this)"></a>
+                </li>
+            </ul>
+            <ul class="boxes">
+                <li>
+                    <a href="#" onclick="magic_color(this)"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="magic_color(this)"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="magic_color(this)"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="magic_color(this)"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="magic_color(this)"></a>
+                </li>
+            </ul>
+            <ul class="boxes">
+                <li>
+                    <a href="#" onclick="magic_color(this)"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="magic_color(this)"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="magic_color(this)"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="magic_color(this)"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="magic_color(this)"></a>
+                </li>
+            </ul>
+            <ul class="boxes">
+                <li>
+                    <a href="#" onclick="magic_color(this)"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="magic_color(this)"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="magic_color(this)"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="magic_color(this)"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="magic_color(this)"></a>
+                </li>
+            </ul>
+            <ul class="boxes">
+                <li>
+                    <a href="#" onclick="magic_color(this)"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="magic_color(this)"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="magic_color(this)"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="magic_color(this)"></a>
+                </li>
+                <li>
+                    <a href="#" onclick="magic_color(this)"></a>
+                </li>
+            </ul>
+
+        </div>
     </div>
     <div class="examples">
         <h2>Exercise 2. Odd number</h2>
         <p>Create a function check if a number is odd. </p>
         <span>Example: The user input the number 5; Result: odd</span>
 
-        <div class="result"></div>
+        <div class="result">
+            <div class="input-form">
+                <label for="numero">Number</label>
+                <input id="numero" name="numero" type="text">
+            </div>
+            <div class="input-form">
+                <button onclick="is_odd(numero.value)">Calculate</button>
+            </div>
+            <div class="result rs">
+
+            </div>
+        </div>
     </div>
     <div class="examples">
         <h2>Exercise 3. Cylinder volume</h2>
         <p>Create a program to calculate the volume of a cylinder</p>
         <a target="_blank" class="lnkButton" href="https://www.varsitytutors.com/hotmath/hotmath_help/topics/volume-of-a-cylinder"><img src="https://www.varsitytutors.com/assets/vt-hotmath-legacy/hotmath_help/topics/volume-of-a-cylinder/image005.gif"></a>
-        <div class="result"></div>
+        <div class="result">
+            <div class="input-form">
+                <label for="radio">Radio</label>
+                <input id="radio" name="radio" type="number">
+            </div>
+            <div class="input-form">
+                <label for="h">Height</label>
+                <input id="h" name="h" type="number">
+            </div>
+            <div class="input-form">
+                <button onclick="volumen(radio.value,h.value)">Calculate</button>
+            </div>
+            <div class="result rs_volumen">
+
+            </div>
+
+        </div>
     </div>
     <div class="examples">
         <h2>Exercise 4. A Gender-based Statistical Report</h2>
@@ -58,7 +172,24 @@
                 <div class="bar-element"></div>
             </div>
         </div>
-        <div class="result"></div>
+        <div class="result">
+            <div class="form-input">
+                <label for="mens">Mens</label>
+                <input type="number" min="1" value="1" id="mens" name="mens">
+            </div>
+            <div class="form-input">
+                <label for="womens">Womens</label>
+                <input type="number" min="1" value="1" id="womens" name="mens">
+            </div>
+            <div class="form-input">
+                <button onclick="draw_bars(mens.value, womens.value)">Calculate</button>
+            </div>
+            <div class="result">
+                <div class="bar-element bar-m"></div>
+                <div class="bar-element bar-w"></div>
+                <div class="clear"></div>
+            </div>
+        </div>
     </div>
     <div class="examples">
         <table cellspacing="0" cellpadding="0">

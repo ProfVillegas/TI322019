@@ -1,131 +1,149 @@
-@import url('https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap');
-*,
-html,
-body {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Libre Franklin', sans-serif;
-    background: #fcfcfc;
-}
-
-.examples {
-    padding: 10px;
-    background: rgba(220, 220, 220, .5);
-    width: 500px;
-    margin: 20px auto 10px auto;
-}
-
-.examples span {
-    font-size: smaller;
-}
-
-.examples img {
-    width: 50px;
-}
-
-.examples:hover {
-    background: rgba(220, 220, 220, 1);
-}
-
-.examples ul.boxes {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.examples ul.boxes li {
-    display: inline-block;
-}
-
-.examples ul.boxes li a {
-    color: #000;
-    width: 20px;
-    height: 20px;
-    box-shadow: 0 10px 10px -5px, inset 0 0 10px;
-    display: block;
-    margin: 0;
-    padding: 0;
-}
-
-.examples .lnkButton {
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 20px;
-    border: none;
-    background-color: #c0cec0;
-    box-shadow: #333 0 10px 10px -5px, #333 inset 0 0 10px;
-    transition: box-shadow 2s;
-}
-
-.examples .lnkButton:hover {
-    box-shadow: #333 0 10px 10px -10px, #777 inset 0 0 5px;
-}
-
-.examples .result {
-    border: 1px #333 dashed;
-    min-height: 100px;
-    margin-top: 10px;
-}
-
-.examples .input-form {
-    padding: 5px 20px;
-}
-
-.examples .input-form button {
-    padding: 5px 20px;
-    vertical-align: middle;
-}
-
-.examples .input-form input {
-    border: 0;
-    padding: 0;
-    margin: 0;
-    padding: 5px;
-    min-width: 200px;
-    border: 1px #777 solid;
-}
-
-.bar-element {
-    background-color: #000;
-    display: block;
-    width: 0px;
-    height: 40px;
-}
-
-.show-clue {
-    display: inline-block;
-    text-decoration: none;
-    background-color: #000;
-    color: #FFF;
-    opacity: 0.7;
-    padding: 10px;
-    border-radius: 20px;
-    margin-bottom: 10px;
-}
-
-.show-clue:hover {
-    opacity: 1;
-}
-
-table {
-    font-size: 10px;
-}
-
-table th {
-    text-align: left;
-}
-
-table td {
-    text-align: center;
-}
-
-table tr:hover {
-    background-color: #FFF;
-}
-
-table td:hover {
-    background-color: #c0cec0;
-}
+    @import url('https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap');
+    *,
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: 'Libre Franklin', sans-serif;
+        background: #fcfcfc;
+    }
+    
+    .examples {
+        padding: 10px;
+        background: rgba(220, 220, 220, .5);
+        width: 500px;
+        margin: 20px auto 10px auto;
+    }
+    
+    .examples span {
+        font-size: smaller;
+    }
+    
+    .examples img {
+        width: 50px;
+    }
+    
+    .examples:hover {
+        background: rgba(220, 220, 220, 1);
+    }
+    
+    .examples ul.boxes {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .examples ul.boxes li {
+        display: inline-block;
+    }
+    
+    .examples ul.boxes li a {
+        color: #000;
+        width: 20px;
+        height: 20px;
+        box-shadow: 0 10px 10px -5px, inset 0 0 10px;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .examples .lnkButton {
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: none;
+        background-color: #c0cec0;
+        box-shadow: #333 0 10px 10px -5px, #333 inset 0 0 10px;
+        transition: box-shadow 2s;
+    }
+    
+    .examples .lnkButton:hover {
+        box-shadow: #333 0 10px 10px -10px, #777 inset 0 0 5px;
+    }
+    
+    .examples .result {
+        border: 1px #333 dashed;
+        min-height: 100px;
+        margin-top: 10px;
+    }
+    
+    .examples .input-form {
+        padding: 5px 20px;
+    }
+    
+    .examples .input-form button {
+        padding: 5px 20px;
+        vertical-align: middle;
+    }
+    
+    .examples .input-form input {
+        border: 0;
+        padding: 0;
+        margin: 0;
+        padding: 5px;
+        min-width: 200px;
+        border: 1px #777 solid;
+    }
+    
+    .bar-element {
+        background-color: #000;
+        display: block;
+        width: 0px;
+        height: 40px;
+        transition: width 2s;
+    }
+    
+    .bar-m {
+        background-color: darkturquoise;
+    }
+    
+    .bar-w {
+        background-color: rgb(182, 0, 0);
+    }
+    
+    .bar-m,
+    .bar-w {
+        float: left;
+    }
+    
+    .show-clue {
+        display: inline-block;
+        text-decoration: none;
+        background-color: #000;
+        color: #FFF;
+        opacity: 0.7;
+        padding: 10px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .show-clue:hover {
+        opacity: 1;
+    }
+    
+    table {
+        font-size: 10px;
+    }
+    
+    table th {
+        text-align: left;
+    }
+    
+    table td {
+        text-align: center;
+    }
+    
+    table tr:hover {
+        background-color: #FFF;
+    }
+    
+    table td:hover {
+        background-color: #c0cec0;
+    }
+    
+    .clear {
+        clear: both;
+    }

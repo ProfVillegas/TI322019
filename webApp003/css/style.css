@@ -83,3 +83,15 @@ body {
 .enable {
     display: block;
 }
+
+
+/***ClearFixV2.0**/
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    content: " ";
+    height: 0;
+    font-size: 0;
+    clear: both
+}
