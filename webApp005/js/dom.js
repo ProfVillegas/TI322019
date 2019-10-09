@@ -19,13 +19,23 @@ window.onload = function() {
         .innerHTML;
         document.getElementById("elements").innerHTML 
         += elemento;*/
-        var product = document.getElementById("template").getElementsByTagName("input")[0];
-        console.log(product);
+        var product = document.getElementById("template")
+            .getElementsByTagName("input")[0];
+        var amount = document.getElementById("template")
+            .getElementsByTagName("input")[1];
 
         var fLabel = document.createElement("label");
         fLabel.innerHTML = "Text Element ";
         var fInput = document.createElement("input");
         fInput.type = "text";
+        fInput.value = product.value;
+        product.value = "";
+        product.focus();
+        /* */
+        var fInput2 = document.createElement("input");
+        fInput2.type = "text";
+        fInput2.value = amount.value;
+        amount.value = "";
 
         var link = document.createElement("a");
         link.href = "#delete";
@@ -37,6 +47,7 @@ window.onload = function() {
         }
 
         fLabel.appendChild(fInput);
+        fLabel.appendChild(fInput2);
         fLabel.appendChild(link);
 
         document.getElementById("elements")
