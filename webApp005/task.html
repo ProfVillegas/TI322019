@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Task List</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        
+        .list-product:last-child {
+            margin-bottom: 0;
+            border-bottom-right-radius: .25rem;
+            border-bottom-left-radius: .25rem;
+        }
+        
+        .list-product:first-child {
+            border-top-left-radius: .25rem;
+            border-top-right-radius: .25rem;
+        }
+        
+        .list-product {
+            list-style-position: inside;
+            padding: .75rem 1.25rem;
+            margin-bottom: -1px;
+            background-color: #fff;
+            border: 1px solid rgba(0, 0, 0, .125);
+        }
+        
+        .list-product span:first-child {
+            padding-left: 30px;
+        }
+        
+        .list-product span:last-child {
+            float: right;
+            opacity: 0;
+        }
+        
+        .list-product span:last-child img {
+            padding: 0 5px;
+        }
+        
+        .list-product:hover span:last-child {
+            opacity: 1;
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/task.js"></script>
+</head>
+
+<body>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <h5 class="my-0 mr-md-auto font-weight-normal">Task List</h5>
+        <nav class="my-2 my-md-0 mr-md-3" style="display: none;">
+            <a class="p-2 text-dark" href="#" style="display: none;">Features</a>
+        </nav>
+        <a class="btn btn-outline-primary" href="#" style="display: none;">Sign up</a>
+    </div>
+
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">Task list</h1>
+        <p class="lead">Give the task and time.</p>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div class="form-row" id="form_task">
+                    <div class="form-group col-md-5">
+                        <label for="inDesc" class="col-form-label">Description </label>
+                        <input type="text" id="inDesc" class="form-control mb-2" placeholder="Write description of activity" required autofocus>
+
+                    </div>
+
+                    <div class="form-group col-md-5">
+                        <label for="inTime" class="col-form-label">Time </label>
+                        <input type="time" id="inTime" class="form-control" placeholder="00:00 am" required>
+                    </div>
+                    <div class="form-group col-md-2"><br>
+                        <a href="#add" id="add" class="btn btn-info btn-lg">Add</a>
+                    </div>
+
+
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container ">
+        <ol id="task-list" class="list-group px-3 py-3 pt-md-5 pb-md-4 mx-auto"></ol>
+    </div>
+
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <img class="mb-2" src="images/logo-mobile.png" alt="" width="44" height="44">
+                    <small class="d-block mb-3 text-muted">&copy; 2017-2019</small>
+                </div>
+                <div class="col-6 col-md" style="display: none;">
+                    <h5>Features</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Cool stuff</a></li>
+                        <li><a class="text-muted" href="#">Random feature</a></li>
+                        <li><a class="text-muted" href="#">Team feature</a></li>
+                        <li><a class="text-muted" href="#">Stuff for developers</a></li>
+                        <li><a class="text-muted" href="#">Another one</a></li>
+                        <li><a class="text-muted" href="#">Last time</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md" style="display: none;">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Resource</a></li>
+                        <li><a class="text-muted" href="#">Resource name</a></li>
+                        <li><a class="text-muted" href="#">Another resource</a></li>
+                        <li><a class="text-muted" href="#">Final resource</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md" style="display: none;">
+                    <h5>About</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Team</a></li>
+                        <li><a class="text-muted" href="#">Locations</a></li>
+                        <li><a class="text-muted" href="#">Privacy</a></li>
+                        <li><a class="text-muted" href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
